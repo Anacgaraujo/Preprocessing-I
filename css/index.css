@@ -1,1 +1,322 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 1000px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 10px 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  header {
+    width: 500px;
+    padding: 10px 5px 5px 5px;
+    justify-content: space-between;
+  }
+}
+header h1 {
+  color: darkblue;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 15px;
+  }
+}
+header a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  header a {
+    font-size: 12px;
+  }
+}
+.myPhoto {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .myPhoto {
+    width: 650px;
+    text-align: left;
+  }
+}
+.myPhoto img {
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .myPhoto img {
+    width: 150px;
+  }
+}
+.myPhoto h1 {
+  color: darkblue;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .myPhoto h1 {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+.myPhoto h3 {
+  color: darkblue;
+}
+@media (max-width: 800px) {
+  .myPhoto h3 {
+    font-size: 12px;
+  }
+}
+.bio {
+  padding: 2%;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin: 10px;
+}
+@media (max-width: 800px) {
+  .bio {
+    width: 500px;
+  }
+}
+.bio p {
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .bio p {
+    font-size: 10px;
+    width: 450px;
+  }
+}
+.container {
+  display: flex;
+  margin: 20px;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 500px;
+  }
+}
+.container .skills {
+  width: 45%;
+  line-height: 30px;
+}
+@media (max-width: 800px) {
+  .container .skills {
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+.container .skills h2 {
+  color: darkblue;
+  font-weight: bold;
+}
+.container .resume {
+  width: 45%;
+}
+.container .resume h2 {
+  color: darkblue;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .container .resume h2 {
+    display: none;
+  }
+}
+.container .resume table {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+@media (max-width: 800px) {
+  .container .resume table {
+    display: none;
+  }
+}
+.container .resume table tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
+.container .resume table tr th {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.container .resume table tr td {
+  margin-right: 60px;
+  line-height: 30px;
+}
+.contact {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .contact {
+    width: 500px;
+  }
+}
+.contact h2 {
+  color: darkblue;
+  font-size: 25px;
+}
+@media (max-width: 800px) {
+  .contact h2 {
+    font-size: 12px;
+  }
+}
+.contact p {
+  padding: 5px;
+}
+@media (max-width: 800px) {
+  .contact p {
+    font-size: 12px;
+  }
+}
